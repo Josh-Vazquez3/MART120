@@ -1,0 +1,45 @@
+﻿<html>
+
+<head>
+    <h1>Contact Us</h1>
+    <style>
+        span {
+            font-family: Georgia, 'Times New Roman', Times, serif
+        }
+    </style>
+<script>
+function checkbox()
+{
+var name=document.getElementById("name").value;
+    window.alert("Required"+name); 
+    window.alert("Required"+email);   
+    if(name=="")
+    {
+        document.getElementById("name").style.backgroundColor="red";  
+        document.getElementById("email").style.backgroundColor="red";
+    }
+}
+</script>
+</head>
+
+<body>
+    <h2>Name:</h2><input type="text" id="name">
+    <h2>Email:</h2><input type="text" id="email">
+    <br />
+    Accept terms of agreement:
+    <br />
+    <input type="radio" id="terms" name="terms" value="yes">yes 
+    <input type="radio" id="terms" name="terms" value="no">no
+   
+    <button id="button" value="submit" onclick="checkbox();">submit</button>
+    
+    <ul>
+        <li><a href="Homepage" target="_new"> Homepage</a></li>
+        <li><a href="page2" target="_new">Page2</a></li>
+    </ul>
+
+
+
+</body>
+
+</html>
